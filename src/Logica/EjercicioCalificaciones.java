@@ -2,7 +2,7 @@ package Logica;
 import java.util.Scanner;
 
 public class EjercicioCalificaciones {
-    private double[] IngresarCalificaciones(double[] notasF){
+    private static double[] IngresarCalificaciones(double[] notasF){
         Scanner input = new Scanner(System.in);
         int e = 0;
         System.out.println("---------------------------------------");
@@ -27,7 +27,7 @@ public class EjercicioCalificaciones {
         return notasF;
     }
 
-    private double calcularPromedioCurso(double[] notasF){
+    private static double calcularPromedioCurso(double[] notasF){
         double suma = 0;
         for (int i = 0; i < notasF.length; i++) {
             suma = suma + notasF[i];
@@ -36,7 +36,7 @@ public class EjercicioCalificaciones {
         return promedio;
     }
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
         double[] notasF = new double[5];
         System.out.println("---------------------------------------");
         System.out.println("Bienvenido Al Sistema De Calificaciones");
