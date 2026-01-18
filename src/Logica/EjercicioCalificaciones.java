@@ -35,6 +35,7 @@ public class EjercicioCalificaciones {
         double promedio = suma / notasF.length;
         return promedio;
     }
+
     public void main(String[] args) {
         double[] notasF = new double[5];
         System.out.println("---------------------------------------");
@@ -51,7 +52,4 @@ public class EjercicioCalificaciones {
         System.out.println("---------------------------------------");
 
     }
-
-
-
 }
