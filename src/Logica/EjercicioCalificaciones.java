@@ -1,4 +1,4 @@
-﻿package Logica;
+package Logica;
 import java.util.Scanner;
 
 public class EjercicioCalificaciones {
@@ -11,14 +11,16 @@ public class EjercicioCalificaciones {
         for (int i = 0; i < notasF.length; i++) {
             System.out.print("Ingrese Nota["+i+"]: ");
             notasF[i] = input.hasNextDouble() ? input.nextDouble() : (e = 1) ;
-            if(e == 1){
-                System.out.println("Error: Valor Invalido, Ingrese Un Numero");
-                e = 0;
-                i--;
-            }
             if(notasF[i] < 0 || notasF[i] > 10){
                 System.out.println("Error: La Nota Debe Estar Entre 0 y 10");
                 i--;
+            }else{
+                if(e == 1) {
+                    e = 0;
+                    System.out.println("Error: Valor Invalido, Ingrese Un Numero");
+                    i--;
+                    input.next();
+                }
             }
         }
         System.out.println("Notas Ingresadas Correctamente");
