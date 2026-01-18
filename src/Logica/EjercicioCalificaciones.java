@@ -23,7 +23,7 @@ public class EjercicioCalificaciones {
                 }
             }
         }
-        System.out.println("-----Notas Ingresadas Correctamente");
+        System.out.println("-----Notas Ingresadas Correctamente----");
         System.out.println("---------------------------------------");
 
     }
