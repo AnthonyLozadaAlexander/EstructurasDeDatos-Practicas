@@ -7,15 +7,16 @@ public class InvertirCadenaStrings {
         long start = System.nanoTime();
         Scanner input = new Scanner(System.in);
         String texto = "", invertido = "";
-        System.out.println("----------Bienvenido--------");
+        System.out.println("-------------Bienvenido------------");
         System.out.print("Ingrese El Texto a Invertir: ");
         texto = input.nextLine();
-        System.out.println("----------------------------");
+        System.out.println("-----------------------------------");
         invertido = invertirCadena(texto);
         System.out.println("Cadena Original: " + texto);
         System.out.println("Cadena Invertida: " + invertido);
-        System.out.println("-----------------------------");
+        System.out.println("-----------------------------------");
         long end = System.nanoTime();
+        System.out.println("Tiempo Ejecucion Total: " + (end - start) + " nanosegundos");
     }
     public static String invertirCadena(String original){
         char[] arr = original.toCharArray(); // convierte el String en un array de char
